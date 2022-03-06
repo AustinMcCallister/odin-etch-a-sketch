@@ -27,3 +27,10 @@ sketchGrid.forEach((square) => {
     }
   });
 });
+
+const resetButton = document.querySelector('#reset');
+resetButton.addEventListener('click', () => {
+  sketchGrid.forEach((square) => {
+    square.style.backgroundColor = colorScheme[6];
+  });
+});
