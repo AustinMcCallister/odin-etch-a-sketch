@@ -6,7 +6,7 @@ for (let i = 0; i < gridSize; i++) {
     const sketchSquare = document.createElement('div');
     const squareSize = (sketchBody.clientWidth / gridSize);
     sketchSquare.classList.add('sketch-square');
-    sketchSquare.setAttribute('style', `width: ${squareSize}px; height: ${squareSize}px;`)
+    sketchSquare.setAttribute('style', `width: ${squareSize}px; height: ${squareSize}px;`);
     sketchBody.appendChild(sketchSquare);
   }
 }
