@@ -26,6 +26,9 @@ sketchGrid.forEach((square) => {
       event.target.style.backgroundColor = colorScheme[0];
     }
   });
+  square.addEventListener('mousedown', (event) => {
+    event.target.style.backgroundColor = colorScheme[0];
+  });
 });
 
 const resetButton = document.querySelector('#reset');
