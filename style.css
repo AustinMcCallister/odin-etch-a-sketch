@@ -40,20 +40,22 @@ body {
   border: none;
   border-radius: 8px;
   box-shadow: 0 0 10px #2E3440;
-  padding: 32px;
+  padding: 8px;
 }
 
 .sketch-body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  border: 1px solid #2E3440;
+  border: solid #D8DEE9;
+  border-width: 1px 1px 1px 1px;
   flex: 1;
 }
 
 .sketch-square {
-  background-color: #D8DEE9;
-  border: 1px solid #2E3440;
+  background-color: #ECEFF4;
+  border: solid #D8DEE9;
+  border-width: 0px 1px 1px 0px;
   flex: 1 0 auto;
 }
 
@@ -62,7 +64,8 @@ body {
   background-color: #2E3440;
   display: flex;
   font-size: 18px;
-  padding: 32px;
+  padding: 16px;
+  margin-top: 64px;
   width: 100vw;
   justify-content: center;
   align-items: center;
