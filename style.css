@@ -27,6 +27,22 @@ body {
   padding: 36px;
 }
 
+.section-one {
+  display: flex;
+  height: 100%;
+}
+
+.sketch-container {
+  background-color: #D8DEE9;
+  width: 544px;
+  height: 544px;
+  display: flex;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #2E3440;
+  padding: 32px;
+}
+
 .footer {
   color: #E5E7EB;
   background-color: #2E3440;
