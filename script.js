@@ -5,6 +5,9 @@ const colorScheme = ['#2E3440', '#3B4252', '#434C5E', '#4C566A',
 
 let gridSize = 16;
 
+const body = document.querySelector('body');
+body.setAttribute('ondragstart', 'return false;');
+
 const sketchBody = document.querySelector('.sketch-body');
 for (let i = 0; i < gridSize; i++) {
   for (let j = 0; j < gridSize; j++) {
