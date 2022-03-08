@@ -63,6 +63,9 @@ output.innerHTML = `${slider.value} x ${slider.value}`; // Display the default s
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
   output.innerHTML = `${this.value} x ${this.value}`;
+}
+
+slider.onchange = function () {
   gridSize = this.value;
   deleteGrid();
   drawGrid(gridSize);
