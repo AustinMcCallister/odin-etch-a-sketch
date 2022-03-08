@@ -140,6 +140,7 @@ body {
   box-shadow: 0 0 5px #2E3440;
   padding: 16px 48px;
   margin: 48px;
+  cursor: pointer;
 }
 
 #reset:hover {
