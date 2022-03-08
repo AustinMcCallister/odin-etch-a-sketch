@@ -12,6 +12,8 @@ body.setAttribute('ondragstart', 'return false;');
 
 function drawGrid(gridSize) {
   const sketchBody = document.querySelector('.sketch-body');
+  sketchBody.setAttribute('style', `grid-template-rows: repeat(${gridSize}, 1fr);`);
+  sketchBody.setAttribute('style', `grid-template-columns: repeat(${gridSize}, 1fr);`);
   for (let i = 0; i < gridSize ** 2; i++) {
     const sketchSquare = document.createElement('div');
     const squareSize = (sketchBody.clientWidth / gridSize);
