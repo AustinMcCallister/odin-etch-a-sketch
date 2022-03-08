@@ -12,6 +12,7 @@ body.setAttribute('ondragstart', 'return false;');
 
 function drawGrid(gridSize) {
   const sketchBody = document.querySelector('.sketch-body');
+  let docFragment = document.createDocumentFragment();
   sketchBody.setAttribute('style', `grid-template-rows: repeat(${gridSize}, 1fr);`);
   sketchBody.setAttribute('style', `grid-template-columns: repeat(${gridSize}, 1fr);`);
   for (let i = 0; i < gridSize ** 2; i++) {
@@ -19,8 +20,9 @@ function drawGrid(gridSize) {
     const squareSize = (sketchBody.clientWidth / gridSize);
     sketchSquare.classList.add('sketch-square');
     sketchSquare.setAttribute('style', `width: ${squareSize}px; height: ${squareSize}px;`);
-    sketchBody.appendChild(sketchSquare);
+    docFragment.appendChild(sketchSquare);
   }
+  sketchBody.appendChild(docFragment);
 }
 
 function resetFunction() {
